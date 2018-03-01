@@ -2,7 +2,7 @@
 This is a reimplementation of the paper "Seed, Expand and Constrain: Three Principles for Weakly-Supervised Image 
 Segmentation"([Original Github](https://github.com/kolesman/SEC)). 
 
-##Features
+## Features
 
 1. Compared with the original Caffe version, this version includes all the training codes such as training code for 
 foreground cues and background cues. Therefore new dataset can be used.
@@ -32,7 +32,7 @@ Extract them and put them into folder "dataset", and then run:
 
 ```python create_dataset.py```
 
-##Training
+## Training
 
 Download models pretrained on Image-net ([HERE](https://1drv.ms/u/s!ArsE1Wwv6I6dgQGqn_nDGobaSSSf)), extract the files and 
 put them into folder "models". 
@@ -47,7 +47,7 @@ python train_fg_cues.py --gpus 0,1,2,3
 python train_SEC.py --gpus 0,1,2,3
 ```
 
-##Evaluation
+## Evaluation
 
 The snapshots will be saved in folder "snapshots". To evaluate a snapshot, simply use (for example epoch 8):
 
