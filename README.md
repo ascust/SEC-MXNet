@@ -3,6 +3,7 @@ This is a reimplementation of the paper "Seed, Expand and Constrain: Three Princ
 Segmentation"([Original Github](https://github.com/kolesman/SEC)). 
 
 ##Features
+
 1. Compared with the original Caffe version, this version includes all the training codes such as training code for 
 foreground cues and background cues. Therefore new dataset can be used.
 
@@ -14,8 +15,8 @@ foreground cues and background cues. Therefore new dataset can be used.
 due to randomness. 
 The Resnet50 version is much higher than the VGG16 version (IOU: 55.3). 
 
-
 ## Dependencies
+
 The code is implemented in MXNet. Please go to the official website ([HERE](https://mxnet.apache.org)) for installation.
 Please make sure the MXNet is compiled with OpenCV support. 
 
@@ -32,6 +33,7 @@ Extract them and put them into folder "dataset", and then run:
 ```python create_dataset.py```
 
 ##Training
+
 Download models pretrained on Image-net ([HERE](https://1drv.ms/u/s!ArsE1Wwv6I6dgQGqn_nDGobaSSSf)), extract the files and 
 put them into folder "models". 
 
@@ -44,6 +46,7 @@ python train_bg_cues.py --gpus 0,1,2,3
 python train_fg_cues.py --gpus 0,1,2,3
 python train_SEC.py --gpus 0,1,2,3
 ```
+
 ##Evaluation
 
 The snapshots will be saved in folder "snapshots". To evaluate a snapshot, simply use (for example epoch 8):
