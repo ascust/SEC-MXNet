@@ -1,0 +1,7 @@
+numpy==1.13.3
+cython==0.27.3
+pillow==5.0.0
+scipy==0.19.0
+opencv-python==3.2.0.7
+pydensecrf==1.0rc2
+easydict
