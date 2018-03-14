@@ -53,7 +53,7 @@ if __name__ == "__main__":
                         multi_label_file=multi_label_file, class_num=class_num, rgb_mean=conf.MEAN_RGB,
                         epoch_size=conf.EPOCH_SIZE_FG, max_epoch=1, input_size=conf.INPUT_SIZE_SEC,
                         batch_size=conf.BATCH_SIZE_FG, lr=conf.LR_FG, wd=conf.WD,
-                        momentum=conf.MOMENTUM, lr_decay=conf.LR_DECAY, workspace=conf.WORKSPACE)
+                        momentum=conf.MOMENTUM, lr_decay=conf.LR_DECAY_FG, workspace=conf.WORKSPACE)
 
     logging.info("start generating fg cue file for SEC.")
 
