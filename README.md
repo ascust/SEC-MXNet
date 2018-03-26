@@ -27,7 +27,7 @@ The other python dependences can be found in "dependencies.txt" and can be insta
 ## Dataset
 
 There are two datasets, PASCAL VOC12([HERE](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar)) and
- SBD([HERE](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/semantic_contours/benchmark.tg)).
+ SBD([HERE](http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/semantic_contours/benchmark.tgz)).
 Extract them and put them into folder "dataset", and then run:
 
 ```python create_dataset.py```
